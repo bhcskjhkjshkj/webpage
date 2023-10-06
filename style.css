@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: aliceblue;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background:url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJvZHklMjBmaXRuZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    background-position: center;
+}
+.rkabahi{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.ltop{
+    width: 100%;
+    height: 50%;
+    background:url(https://images.unsplash.com/photo-1549476464-37392f717541?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9keSUyMGZpdG5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    background-position: center;
+}
+.lbottom{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+.rtop{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+}
+.rbottom{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    background-image: url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJvZHklMjBmaXRuZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);
+    background-size: cover;
+    
+}
+.rtop p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+ p{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0px 10px
+    margin:20px 30px;
+    color:white;
+ }
+ .rtop i{
+     padding: 20px 30px;
+     margin-left: 70%;
+     color: rgb(245, 238, 238)
+     
+ }
+ .rtop i:hover{
+     opacity: .6;
+     cursor: pointer;
+ }
+.lbottom h1{
+    color: aliceblue;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media (max-width:800px) {
+    .main {
+        flex-direction: row;
+    }
+    .main .right{
+        width: 100%;
+    }
+    .main.left{
+        width: 100%;
+    }
+    .main .rbottom{
+        width: 100%;
+    }
+}
